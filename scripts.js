@@ -1,6 +1,11 @@
-$('button').on('click', function (){
-    
-    }
-})
+let counter = 0;
 
-let EventListener = 0;
+$('#up').click(() => {
+    counter = counter+1;
+    $('#counter').text(counter);
+});
+
+$("#down").click (() => {
+    counter = counter-1;
+    $('#counter').text(counter);
+});
